@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>День</th>
+            <th>Погода</th>
+            <th>Температура</th>
+        </tr>
+        <tr>
+            <td>Понедельник</td>
+            <td>Солнечно</td>
+            <td>20°C / 68°F</td> <!-- Знак градуса с помощью HTML-сущности -->
+        </tr>
+        <!-- Добавьте больше строк для каждого дня недели -->
+    </table>
+
+    <!-- Знак градуса с помощью CSS -->
+    <style>
+        .degree::after {
+            content: "\00B0";
+        }
+    </style>
+
+    <p class="degree">20 C / 68 F</p>
+
+</body>
+</html>
